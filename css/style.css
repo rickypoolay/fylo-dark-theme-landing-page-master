@@ -199,14 +199,6 @@ p {
   margin-bottom: 20px;
 }
 
-.home-testimonials h3 {
-  margin-bottom: 0;
-}
-
-.home-testimonials p {
-  font-size: 1.3rem;
-}
-
 .home-testimonials .testimonial-card {
   border-radius: 10px;
   width: 32%;
@@ -215,7 +207,8 @@ p {
   background-color: #202a3c;
 }
 
-.home-testimonials .testimonial-card .text-wrapper {
+.home-testimonials .testimonial-card .testimonial-text {
+  font-size: 1.3rem;
   text-align: left;
 }
 
@@ -230,6 +223,18 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.home-testimonials .testimonial-card .profile-wrapper .text-wrapper {
+  text-align: left;
+}
+
+.home-testimonials .testimonial-card .profile-wrapper .text-wrapper .profile-name {
+  margin-bottom: 0;
+}
+
+.home-testimonials .testimonial-card .profile-wrapper .text-wrapper .profile-title {
+  font-size: 1rem;
 }
 
 .home-testimonials .testimonial-card .profile-wrapper .img-wrapper {
