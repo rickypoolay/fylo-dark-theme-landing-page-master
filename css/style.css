@@ -4,6 +4,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-size: 14px;
 }
 
 header,
@@ -51,6 +52,14 @@ h1 {
   font-size: 3rem;
 }
 
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
 a,
 p {
   font-size: 1.5rem;
@@ -93,6 +102,12 @@ p {
   background: -webkit-gradient(linear, left top, right top, from(#65e2d9), color-stop(50%, #42abd1));
   background: linear-gradient(to right, #65e2d9, #42abd1 50%);
   border-radius: 50px;
+}
+
+.input {
+  border-radius: 50px;
+  padding: 20px 40px;
+  width: 100%;
 }
 
 .text-arrow-cta {
