@@ -109,7 +109,7 @@ p {
 }
 
 .navbar {
-  padding: 20px 0;
+  padding: 40px 0;
   background: #1c2230;
 }
 
@@ -125,6 +125,7 @@ p {
 
 .navbar .nav-links a {
   font-size: 1rem;
+  font-weight: 300;
 }
 
 .hero {
@@ -224,5 +225,20 @@ p {
 
 .home-testimonials .testimonial-card .profile-wrapper .img-wrapper img {
   border-radius: 100px;
+}
+
+.home-input {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #181f2a), color-stop(50%, #0b1523));
+  background: linear-gradient(#181f2a 50%, #0b1523 50%);
+}
+
+.home-input .container {
+  background-color: #1c2230;
+  max-width: 70%;
+  padding: 20px 35px;
+}
+
+.home-input .container .text-wrapper {
+  max-width: 90%;
 }
 /*# sourceMappingURL=style.css.map */

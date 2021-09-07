@@ -111,7 +111,7 @@ p{
 //Navbar
 
 .navbar {
-    padding: 20px 0;
+    padding: 40px 0;
     background: $heroBackgroundColor;
 
     .nav-links {
@@ -121,6 +121,7 @@ p{
 
         a {
             font-size: 1rem;
+            font-weight: 300;
         }
     }
 }
@@ -231,6 +232,26 @@ p{
                     border-radius: 100px;
                 }
             }
+        }
+    }
+}
+
+//Home Page | Input Section
+
+.home-input {
+    background:linear-gradient($mainBackgroundColor 50%, $footerBackgroundColor 50%);
+
+    .container {
+        background-color: $heroBackgroundColor;
+        max-width: 70%;
+        padding: 20px 35px;
+
+        .text-wrapper {
+            max-width: 90%;
+        }
+
+        .input-cta-wrapper {
+
         }
     }
 }
