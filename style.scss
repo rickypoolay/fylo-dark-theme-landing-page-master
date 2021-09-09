@@ -1,3 +1,36 @@
+//Breakpoints
+
+@mixin breakpoint($point) {
+    @if $point==desktop {
+        @media (min-width: 70em) {
+            @content;
+        }
+    }
+
+    @else if $point==laptop {
+        @media (min-width: 64em) {
+            @content;
+        }
+    }
+
+    @else if $point==tablet {
+        @media (min-width: 50em) {
+            @content;
+        }
+    }
+
+    @else if $point==phablet {
+        @media (min-width: 37.5em) {
+            @content;
+        }
+    }
+
+    @else if $point==mobileonly {
+        @media (max-width: 37.5em) {
+            @content;
+        }
+    }
+}
 
 //Fonts
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
@@ -13,6 +46,7 @@ $footerBackgroundColor : hsl(216, 53%, 9%);
 $testimonialsBackgroundColor : hsl(219, 30%, 18%);
 $textArrowColor : rgb(92,118,127);
 
+
 *,html,::after,::before {
     margin: 0;
     padding:0;
@@ -27,7 +61,7 @@ footer{
     justify-content: center;
 }
 
-section {
+section,footer {
     background: $mainBackgroundColor;
     padding: 100px 0;
 }
@@ -58,7 +92,7 @@ img {
 }
 
 h1 {
-    font-size:3rem;
+    font-size:3.25rem;
 }
 
 h2 {
@@ -71,7 +105,7 @@ h3 {
 
 a,
 p{
-    font-size:1.5rem;
+    font-size:1.75rem;
     line-height: 30px;
 }
 
@@ -103,13 +137,11 @@ p{
 }
 
 .input {
+    padding: 25px 40px;
     border-radius: 50px;
-    padding: 20px 40px;
-    width: 100%;
 }
 
 .text-arrow-cta {
-    
     display:inline-block;
     color: $textArrowColor;
     border-bottom: 1px solid $textArrowColor;
@@ -153,11 +185,13 @@ p{
 
     .btn {
         padding:20px 120px;
-        margin-top: 16px;
+        margin-top: 45px;
+        font-weight: 700;
     }
     
     .text-wrapper {
         width: 900px;
+        margin-top: 50px;
     }
 
     p {
@@ -180,6 +214,7 @@ p{
 
     .img-wrapper {
         margin: 0 auto;
+        margin-bottom: 45px;
         max-width: 30%;
         max-height: 30%;
     }
@@ -267,10 +302,40 @@ p{
     .container {
         background-color: $heroBackgroundColor;
         max-width: 70%;
+        width: 1000px;
         padding: 20px 35px;
 
         .text-wrapper {
             max-width: 90%;
         }
+
+        .cta-wrapper {
+            margin-top: 40px;
+            display: flex;
+            
+
+            .input {
+                margin-right: 25px;
+                flex-grow: 1;
+            }
+        }
+    }
+}
+
+//Home Page | Footer Section
+
+footer {
+    background:$footerBackgroundColor;
+    
+    .logo {
+        margin-right: auto;
+    }
+    
+    .icon-wrapper {
+        width:  20px;
+    }
+
+    .social {
+        width: 40px;
     }
 }
