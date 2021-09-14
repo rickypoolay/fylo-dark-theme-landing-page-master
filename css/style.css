@@ -62,7 +62,7 @@ h3 {
 
 a,
 p {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   line-height: 30px;
 }
 
@@ -137,7 +137,7 @@ p {
 }
 
 .navbar .nav-links a {
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-weight: 300;
 }
 
@@ -156,7 +156,7 @@ p {
 }
 
 .hero .text-wrapper {
-  width: 900px;
+  max-width: 900px;
   margin-top: 50px;
 }
 
@@ -283,19 +283,63 @@ footer {
   background: #0b1523;
 }
 
-footer .logo {
+footer .img-wrapper {
   margin-right: auto;
 }
 
 footer .text-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   text-align: left;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 50px;
 }
 
-footer .icon-wrapper {
-  width: 20px;
+footer .icon-text-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-footer .social {
+footer .icon-text-wrapper img {
+  width: 25px;
+  height: 25px;
+  -o-object-fit: fill;
+     object-fit: fill;
+  margin-right: 20px;
+}
+
+footer .footer-location {
+  max-width: 40%;
+}
+
+footer .footer-location img {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+footer .footer-socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 150px;
+  width: 150px;
+}
+
+footer .footer-socials .social {
+  border: solid white 1px;
+  border-radius: 50px;
+  padding: 5px;
   width: 40px;
+  height: 40px;
 }
 /*# sourceMappingURL=style.css.map */
