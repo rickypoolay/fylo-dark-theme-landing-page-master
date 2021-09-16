@@ -51,7 +51,7 @@ $textArrowColor : rgb(92,118,127);
     margin: 0;
     padding:0;
     box-sizing: border-box;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 header,
@@ -92,7 +92,7 @@ img {
 }
 
 h1 {
-    font-size:3.25rem;
+    font-size:3rem;
 }
 
 h2 {
@@ -130,7 +130,7 @@ p{
 
 .btn {
     display: inline-block;
-    padding: 25px 40px;
+    padding: 25px 25px;
     background: $btnGradientColor;
     border-radius: 50px;
 }
@@ -184,7 +184,7 @@ p{
     background-position-y:bottom;
 
     .btn {
-        padding:20px 40px;
+        width: 40%;
         margin-top: 45px;
         font-weight: 700;
     }
@@ -194,7 +194,7 @@ p{
         margin-top: 50px;
     }
 
-    p {
+    .hero-paragraph {
         padding: 0 100px;
     }
 }

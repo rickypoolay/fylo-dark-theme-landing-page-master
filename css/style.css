@@ -4,7 +4,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 header,
@@ -49,7 +49,7 @@ img {
 }
 
 h1 {
-  font-size: 3.25rem;
+  font-size: 3rem;
 }
 
 h2 {
@@ -97,7 +97,7 @@ p {
 
 .btn {
   display: inline-block;
-  padding: 25px 40px;
+  padding: 25px 25px;
   background: -webkit-gradient(linear, left top, right top, from(#65e2d9), color-stop(50%, #42abd1));
   background: linear-gradient(to right, #65e2d9, #42abd1 50%);
   border-radius: 50px;
@@ -150,7 +150,7 @@ p {
 }
 
 .hero .btn {
-  padding: 20px 40px;
+  width: 40%;
   margin-top: 45px;
   font-weight: 700;
 }
@@ -160,7 +160,7 @@ p {
   margin-top: 50px;
 }
 
-.hero p {
+.hero .hero-paragraph {
   padding: 0 100px;
 }
 
